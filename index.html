@@ -134,8 +134,29 @@ h2 {
 			<div class="box"><a href="apps/molemasher/index.html"><p>Portfolio</p></a></div>
 			<div class="box"><a href="apps/molemasher/index.html"><p>Resume</p></a></div>
 		</div>
-	
+	<ul>
+<li class="toclevel-1"><a href="#variables"><span class="tocnumber"></span><span class="toctext">Variables</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#graphics"><span class="tocnumber"></span><span class="toctext">Graphics</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#description"><span class="tocnumber"></span><span class="toctext">Description</span></a></li>
+<li class="toclevel-3 toclevel-4"><a href="#process"><span class="tocnumber"></span><span class="toctext">Process</span></a></li>
+<li class="toclevel-4 toclevel-5"><a href="#conclusions"><span class="tocnumber"></span><spa class="toctext">Conclusions</span></a></li>
+</ul>
 	</div>
+	<div class="main">
+<span class="mw-headline" id="description"> </span>
+<center><h3> The Description </h3></center>
+  <p>Each member, in our computer science class, took data on their happiness throughout the school day. The data that is shown in the graph was collected over the period of two weeks. Each dot on the graph represents the amount of people recorded in the average of happiness(color of the dot on a scale from yellow to red). On the Y-scale on can find the different subjects, which are all represented as numbers on the scale(these numbers correlate to the numbers right about the graph), on the X-scale on can find the days of the week and period of the day.</p></div>
+<div class="main">
+  <span class="mw-headline" id="process"> </span>
+  <center><h3>The Process</h3></center>
+  <p> To record our happiness data, we entered data into a spreadsheet. This spreadsheet had certain columns, that we agreed on before we left the class. The columns we chose were: name, day of week, date, time, room, subject, and happiness(as a number between 1-5). We soon changed these columbs into: day of week and period (day of week.period), amount of students in that certain class, average happiness (based upon the amount of students in that class that recorded their happiness), and subject(assigned as numbers(see above)). Changing the past categories to these new ones including the deleting of alot of data, which were not importent in the creatin of this graph. After we had the data, the computer science class was divided into groups and assigned to create a fake bubble chart to represent most of the data. After creating this bubble chart, we took the real data and queryed it to our liking, so it would be perfect to use in our graph. We used: ["SELECT '', K, I, avg(G), count(A) Group BY K, I LABEL I 'subject', count(A) 'number of responses', avg(G) 'Happiness (1-5)'";] to query our data. This in simple english means: select columns K and I, average column G, count column A, group column A by column K, and use the label subject for column I, use the label cumber of responses for column count A, and use the label Happiness(1-5) for column Average G. We used this query data and generated the new graph(above) using google code. At first Annette and I wanted to create a graph were the class, period, time, and happiness were all shown. The problem was that time changes so we used period and day of week as one variable on the X-axis, and used the amount of people for the size of the bubble. We wanted to show the most data possible in the generating of this graph. We also found a problem in the creating of this graph because our data was being cut off on both the X-axis and Y-axis. We solved the X-axis problem by making the range of the X-axis bigger but to fix the Y-axis problem we would need to strech the Y-axis into the negatives and we found that that would allow for misinterpretations of the graph, so chose not to. 
+  </p></div>
+
+  <div class="main">
+    <span class="mw-headline" id="conclusions"></span>
+    <center><h3> The Conclusions </h3></center>
+    <p> There were many complications in the process of the recording of the data as a class. Many people recorded time, class, ect. in different ways. Ex: People recorded happiness on different scales like some were on a scale of 0-5, others on a scale 1-5. Other complicatiosn were in what different people wanted to depict on these graphs. When sorting through the data, there were typos, which complicated the querying of data. Ex: When people recorded their data, some misspelled the word tuesday, while others had trailing spaces. After the generating of the graph (shown above), we came to some conclusions, those being: (a) in english, history and math people were least happy, (b) computer science and lunch had the largest amounts of people in their average happiness, (c) during free, people were most happy. I like the end result and would not change or process. 
+    </p></div>
 </center>
 	<footer>
 	</footer>
