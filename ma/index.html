@@ -1,5 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+
+.Box{
+	background-color: rgba(0, 0, 0, .7);
+	width:730px;
+	/*margin-top:70px;*/
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:39px;
+	padding-bottom:28px;
+	padding-left:30px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	/*-webkit-box-shadow: 8px 27px 10px -10px rgba(0,0,0, .5);
+	box-shadow: 8px 15px 10px 2px rgba(0,0,0, .5);*/
+	
+	}
+	.Box a{
+		margin-left:8px;
+		margin-bottom:10px;
+		display:inline-block;
+		-moz-border-radius: 15px 15px 15px 15px;
+		-webkit-border-radius: 15px 15px 15px 15px;
+		-ms-border-radius: 15px 15px 15px 15px;
+		border-radius: 15px 15px 15px 15px;
+		
+	}
+	
+	.Box img{
+		-moz-border-radius: 8px 8px 8px 8px;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		-ms-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;
+	}
+	
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ellen's Portfolio</title>
+<title>Portfolio</title>
 <link href="crt.css" rel="stylesheet" type="text/css"/>
 
 <script type="text/javascript" src="js/prototype.js"></script>
@@ -14,7 +81,7 @@
 <p>&nbsp;</p>
 <section id="Ceramic" class="Box"><a title="MuMe Tel" href="designs/daddysdesign.jpg" rel="lightbox[Explore]"><img src="designs/daddysdesignsmall.jpg" alt="" /></a> <a title="University Pain Associates" href="designs/logo.jpg" rel="lightbox[Explore]"><img src="designs/logosmall.jpg" alt="" /></a> <a title="Cig-Harlot" href="designs/cigharlot.jpg" rel="lightbox[Explore]"><img src="designs/cigharlotsmall.jpg" alt="" /></a> <a title="Lipalisious" href="designs/lipalisious.jpg" rel="lightbox[Explore]"><img src="designs/lipalisioussmall.jpg" alt="" /></a> <a title="Momo" href="designs/momo.jpg" rel="lightbox[Explore]"><img src="designs/momosmall.jpg" alt="" /></a> <a title="Chi-City Girl" href="designs/chicitygirl.jpg" rel="lightbox[Explore]"><img src="designs/chicitygirlsmall.jpg" alt="" /></a> <a title="Circle Head" href="designs/barf.jpg" rel="lightbox[Explore]"><img src="designs/barfsmall.jpg" alt="" /></a>&nbsp;<a title="Ellen Ma" href="designs/ellenmalabel.jpg" rel="lightbox[Explore]"><img src="designs/ellenmalabelsmall.jpg" alt="" /></a> <a title="Composition" href="designs/composition.jpg" rel="lightbox[Explore]"><img src="designs/compositionsmall.jpg" alt="" /></a> <a title="Composition" href="designs/compositiontwo.jpg" rel="lightbox[Explore]"><img src="designs/compositiontwosmall.jpg" alt="" /></a> <a title="Book Cover Example" href="designs/bookcoverone.jpg" rel="lightbox[Explore]"><img src="designs/boockcoveronesmall.jpg" alt="" /></a> <a title="Book Cover Example" href="designs/bookcovertwo.jpg" rel="lightbox[Explore]"><img src="designs/bookcovertwosmall.jpg" alt="" /></a> <a title="Announcement Example" href="designs/announcement.jpg" rel="lightbox[Explore]"><img src="designs/announcementsmall.jpg" alt="" /></a> <a title="Announcement Example" href="designs/announcementtwo.jpg" rel="lightbox[Explore]"><img src="designs/announcementtwosmall.jpg" alt="" /></a> <a title="Black and White Poster Example" href="designs/poster.jpg" rel="lightbox[Explore]"><img src="designs/postersmall.jpg" alt="" /></a> <a title="Poster Example" href="designs/giacometti.jpg" rel="lightbox[Explore]"><img src="designs/giacomettismall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianposterone.jpg" rel="lightbox[Explore]"><img src="designs/russianposteronesmall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianpostertwo.jpg" rel="lightbox[Explore]"><img src="designs/russianpostertwosmall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianposterthree.jpg" rel="lightbox[Explore]"><img src="designs/russianposterthreesmall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianposterfour.jpg" rel="lightbox[Explore]"><img src="designs/russianposterfoursmall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianposterfive.jpg" rel="lightbox[Explore]"><img src="designs/russianposterfivesmall.jpg" alt="" /></a> <a title="Museum, on Exactitude in Science" href="designs/russianpostersix.jpg" rel="lightbox[Explore]"><img src="designs/russianpostersixsmall.jpg" alt="" /></a> <a title="Album Cover Example" href="designs/albumcoverone.jpg" rel="lightbox[Explore]"><img src="designs/albumcoveronesmall.jpg" alt="" /></a> <a title="Album Cover Example" href="designs/albumcovertwo.jpg" rel="lightbox[Explore]"><img src="designs/albumcovertwosmall.jpg" alt="" /></a> <a title="Album Cover Example" href="designs/albumcoverfull.jpg" rel="lightbox[Explore]"><img src="designs/albumcoverfullsmall.jpg" alt="" /></a><a title="Iconic Ways of Wearing a Snapback Book Cover" href="designs/cover.jpg" rel="lightbox[Explore]"><img src="designs/coversmall.jpg" alt="" /></a><a title="Page 1 and 2" href="designs/firstpages.jpg" rel="lightbox[Explore]"><img src="designs/firstpagessmall.jpg" alt="" /></a><a title="Page 3 and 4" href="designs/middlepages.jpg" rel="lightbox[Explore]"><img src="designs/middlepagessmall.jpg" alt="" /></a><a title="Page 5 and 6" href="designs/middlepagestwo.jpg" rel="lightbox[Explore]"><img src="designs/middlepagestwosmall.jpg" alt="" /></a><a title="Page 7 and Reference" href="designs/lastpages.jpg" rel="lightbox[Explore]"><img src="designs/lastpagessmall.jpg" alt="" /></a><a title="Chicago Olympic Poster Example" href="designs/olympicposter.jpg" rel="lightbox[Explore]"><img src="designs/olympicpostersmall.jpg" alt="" /></a><a title="Venues" href="designs/olympicpostervenues.jpg" rel="lightbox[Explore]"><img src="designs/olympicpostervenuessmall.jpg" alt="" /></a></section>
 <p><a id="index" href="index.html">Home</a></p>
-<p style="text-align: center;">Copyright &copy; 2013 Ellen Ma. All rights reserved.</p>
+<p style="text-align: center;"></p>
 <p>&nbsp;</p>
 </body>
 </html>
