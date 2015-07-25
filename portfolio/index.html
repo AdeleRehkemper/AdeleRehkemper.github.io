@@ -1,72 +1,339 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Adele Rehkemper</title>
-<link href="crt.css" rel="stylesheet" type="text/css"/>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
 
-<script type="text/javascript" src="js/prototype.js"></script>
-<script type="text/javascript" src="js/scriptaculous.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<link href="lightboxcss.css" rel="stylesheet" type="text/css" />
-<link href="pageone.css" rel="stylesheet" type="text/css">
+    <title>Lightbox</title>
 
-</head>
+    <meta name="description" lang="en" content="Lightbox is a script used to overlay images on the current page. It&apos;s a snap to setup and works on all modern browsers.">
+    <meta name="author" content="Lokesh Dhakar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-	
-<section class ="Box" id="Draw">
+    <link rel="shortcut icon" href="images/favicon.png">
 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
+  </head>
+  <body>
 
+    <nav id="nav" class="nav">
+      <a href="#examples" class="nav-item">Examples</a>
+      <a href="#getting-started" class="nav-item">Getting started</a>
+      <a href="#options" class="nav-item">Options</a>
+      <a href="#browser-support" class="nav-item">Browser support</a>
+      <a href="#license" class="nav-item">License</a>
+      <a href="#help" class="nav-item">Help</a>
+    </nav>
 
-<a href="https://cloud.githubusercontent.com/assets/13401508/8889055/f78d0f52-32c8-11e5-9efa-228028ac9bc8.JPG" rel="lightbox[Drawings]" title="Green Still Life          24x18          Charcoal on Paper"><img src="https://cloud.githubusercontent.com/assets/13401508/8889102/13c12ec2-32cb-11e5-8163-af2300c958c1.jpg"/></a>
-    
-    <a href="drawings/city.jpg" rel="lightbox[Drawings]" title="Great City          8.5x11          Pen on Paper"><img src="drawings/citysmall.jpg"/></a>
-    
-    <a href="drawings/gravysnout.jpg" rel="lightbox[Drawings]" title="Gravy Snout          11x8.5          Pen on Paper"><img src="drawings/gravysnoutsmall.jpg"/></a>
-    
-    <a href="drawings/lonelyboy.jpg" rel="lightbox[Drawings]" title="Lonely Boy          11x8.5          Pen on Paper"><img src="drawings/lonelyboysmall.jpg"/></a>
-    
-    <a href="drawings/longman.jpg" rel="lightbox[Drawings]" title="Long Man          8.5x11          Pen on Paper"><img src="drawings/longmansmall.jpg"/></a>
-    
-    <a href="drawings/madeup.jpg" rel="lightbox[Drawings]" title="Made Up          11x8.5          Pen on Paper"><img src="drawings/madeupsmall.jpg"/></a>
-    
-    <a href="drawings/skeletina.jpg" rel="lightbox[Drawings]" title="Skeletina          8.5x11          Pen on Paper"><img src="drawings/skeletinasmall.jpg"/></a>
-    
-    <a href="drawings/throwinguprainbows.jpg" rel="lightbox[Drawings]" title="Throwing Up Rainbows          8.5x11          Pen on Paper"><img src="drawings/throwinguprainbowssmall.jpg"/></a>
-    
-    <a href="drawings/humanbehavior.JPG" rel="lightbox[Drawings]" title="Human Behavior          7.5x9.75          Pen on Paper"><img src="drawings/humanbehaviorsmall.jpg"/></a>
-    
-    <a href="drawings/teaparty.jpg" rel="lightbox[Drawings]" title="Tea Party          8.5x11          Pen on Paper"><img src="drawings/teapartysmall.jpg"/></a>
-    
-    <a href="drawings/boobietrap.jpg" rel="lightbox[Drawings]" title="Boobie Trap          8.5x11          Pen on Paper"><img src="drawings/boobietrapsmall.jpg"/></a>
-
- <a href="drawings/mask.jpg" rel="lightbox[Drawings]" title="Mask          8.5x11          Pen on Paper"><img src="drawings/masksmall.jpg"/></a>
- 
-  <a href="drawings/circleheads.jpg" rel="lightbox[Drawings]" title="Circle Heads          8.5x11          Pen on Paper"><img src="drawings/circleheadssmall.jpg"/></a>
-
-</section>
-
-<section class ="Box" id="Doodles">
-<a href="drawings/whiteonblack.jpg" rel="lightbox[Drawings]" title="Jazzy          24x18          Charcoal on Black Paper"><img src="drawings/whiteonblacksmall.jpg"/></a>
-
-<a href="drawings/fifthteenmindrawing.jpg" rel="lightbox[Drawings]" title="Fifthteen Minute Combo          18x24          Charcoal on Paper"><img src="drawings/fifthteenmindrawingsmall.jpg"/></a>
-
-<a href="drawings/fivemincombo.jpg" rel="lightbox[Drawings]" title="Five Minute Combo          18x24          Charcoal on Paper"><img src="drawings/fivemincombosmall.jpg"/></a>
-
-<a href="drawings/nintyseccombo.jpg" rel="lightbox[Drawings]" title="Ninty Second Combo          18x24          Charcoal on Paper"><img src="drawings/nintyseccombosmall.jpg"/></a>
-
-<a href="drawings/graham.jpg" rel="lightbox[Drawings]" title="Graham          18x24          Charcoal on Paper"><img src="drawings/grahamsmall.jpg"/></a>
-
-<a href="drawings/jordy.jpg" rel="lightbox[Drawings]" title="Jordy          18x24            Charcoal on Paper"><img src="drawings/jordysmall.jpg"/></a>
-
-</section>
-
-<p style="text-align:center;"></p>
+    <div class="content">
 
 
-</body>
+      <!-- HEADER -->
 
+      <header id="download">
+        <div class="container">
+          <h1 class="logo">
+          <img src="images/picture.svg" class="picture-icon" alt="Icon indicating an image">Lightbox
+        </h1>
+          <a href="https://twitter.com/lokesh" class="logo-credit">by Lokesh Dhakar</a>
+          <p class="lead">
+            The original lightbox script.
+            <br>Eight years later &#x2014; still going strong!
+          </p>
+          <div class="primary-actions">
+            <a href="https://github.com/lokesh/lightbox2/archive/master.zip" class="button">
+              Download
+            </a>
+            <a href="https://github.com/lokesh/lightbox2/" class="button">
+            View on Github
+          </a>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- EXAMPLES -->
+
+      <section id="examples" class="examples-section">
+        <div class="container">
+
+          <h2>Examples</h2>
+          <h3>Two individual images</h3>
+          <div class="image-row">
+            <a class="example-image-link" href="images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="images/thumb-1.jpg" alt="Girl looking out people on beach"></a>
+            <a class="example-image-link" href="images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="images/thumb-2.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
+          </div>
+          <hr>
+          <h3 style="clear: both;">Four image set</h3>
+          <div class="image-row">
+            <div class="image-set">
+              <a class="example-image-link" href="images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thumb-3.jpg" alt="Golden Gate Bridge with San Francisco in distance"></a>
+              <a class="example-image-link" href="images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/thumb-4.jpg" alt="Forest with mountains behind"></a>
+              <a class="example-image-link" href="images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you&apos;re viewing."><img class="example-image" src="images/thumb-5.jpg" alt="Bicyclist looking out over hill at ocean"></a>
+              <a class="example-image-link" href="images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="images/thumb-6.jpg" alt="Small lighthouse at bottom with ocean behind"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- GETTING STARTED -->
+
+      <section id="getting-started" class="getting-started-section">
+        <div class="container">
+          <h2>Getting started</h2>
+
+          <ol class="getting-started-list">
+            <li>
+              <p><a href="https://github.com/lokesh/lightbox2/archive/master.zip">Download the latest version</a><br>
+              (Also available via Bower: <code>bower install lightbox2 --save</code>)</p>
+            </li>
+            <li>
+              <p>Open up the zip file and take a peek at the barebones, working example that is included in the <code>/examples</code> folder.</p>
+            </li>
+            <li>
+              <p>Ready to set Lightbox up on your page? Start by including the Lightbox CSS and Javascript. You can grab both these files from the <code>/dist</code> folder.</p>
+              <ul>
+                <li>Include the CSS at the top of your page in your <code>&lt;head&gt;</code> tag:
+<pre><code>&lt;link <span class="hljs-variable">href=</span><span class="hljs-string">&quot;path/to/lightbox.css&quot;</span> <span class="hljs-variable">rel=</span><span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</code></pre>
+</li>
+<li>Include the Javascript at the bottom of your page before the closing <code>&lt;/body&gt;</code> tag:
+<pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;path/to/lightbox.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
+</li>
+</ul>
+            </li>
+            <li>
+              <p>Make sure jQuery, which is required by Lightbox, is also loaded.</p>
+              <ul>
+                <li>If you already use jQuery on your page, make sure it is loaded before <code>lightbox.js</code>. jQuery 1.7 or greater is required.</li>
+                <li>If you are not currently using jQuery, I&apos;ve created a packaged file that includes both Lightbox and jQuery. Include <code>dist/js/lightbox-plus-jquery.js</code> instead of <code>lightbox.js</code>.</li>
+              </ul>
+            </li>
+            <li>Confirm that the four images loaded by <code>lightbox.css</code> are in the correct location. You can grab the images from the <code>/dist/images</code> folder.
+          </li></ol>
+
+          <h3>Initialize with HTML</h3>
+          <ul>
+            <li>Add a <code>data-lightbox</code> attribute to any image link to enable Lightbox. For the value of the attribute, use a unique name for each image. For example:
+<pre><code class="xml">&lt;a <span class="hljs-variable">href=</span><span class="hljs-string">&quot;images/image-1.jpg&quot;</span> <span class="hljs-variable">data-lightbox=</span><span class="hljs-string">&quot;image-1&quot;</span> <span class="hljs-variable">data-title=</span><span class="hljs-string">&quot;My caption&quot;</span>&gt;Image <span class="hljs-comment">#1&lt;/a&gt;</span></code></pre>
+              <em>Optional:</em> Add a <code>data-title</code> attribute if you want to show a caption.
+            </li>
+            <li>If you have a group of related images that you would like to combine into a set, use the same <code>data-lightbox</code> attribute value for all of the images. For example:
+<pre><code class="xml">&lt;a <span class="hljs-variable">href=</span><span class="hljs-string">&quot;images/image-2.jpg&quot;</span> <span class="hljs-variable">data-lightbox=</span><span class="hljs-string">&quot;roadtrip&quot;</span>&gt;Image <span class="hljs-comment">#2&lt;/a&gt;</span>
+&lt;a <span class="hljs-variable">href=</span><span class="hljs-string">&quot;images/image-3.jpg&quot;</span> <span class="hljs-variable">data-lightbox=</span><span class="hljs-string">&quot;roadtrip&quot;</span>&gt;Image <span class="hljs-comment">#3&lt;/a&gt;</span>
+&lt;a <span class="hljs-variable">href=</span><span class="hljs-string">&quot;images/image-4.jpg&quot;</span> <span class="hljs-variable">data-lightbox=</span><span class="hljs-string">&quot;roadtrip&quot;</span>&gt;Image <span class="hljs-comment">#4&lt;/a&gt;</span></code></pre>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- OPTIONS -->
+
+      <section id="options" class="options-section">
+        <div class="container">
+          <h2>Options</h2>
+
+          <p>If you want to change any of the default options, call the option method.</p>
+<pre class="options-code"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="sml">
+    lightbox.<span class="hljs-built_in">option</span>({
+      <span class="hljs-symbol">&apos;resizeDuration&apos;</span>: <span class="hljs-number">200</span>,
+      <span class="hljs-symbol">&apos;wrapAround&apos;</span>: <span class="hljs-literal">true</span>
+    })
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
+
+          <table class="options-table">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>alwaysShowNavOnTouchDevices</td>
+                <td data-label="Default:" class="default-row">false</td>
+                <td>If true, the left and right navigation arrows which appear on mouse hover when viewing image sets will always be visible on devices which support touch.</td>
+              </tr>
+              <tr>
+                <td>fadeDuration</td>
+                <td data-label="Default:" class="default-row">500</td>
+                <td>The time it takes for the Lightbox container and overlay to fade in and out, in milliseconds.</td>
+              </tr>
+              <tr>
+                <td>fitImagesInViewport</td>
+                <td data-label="Default:" class="default-row">true</td>
+                <td>If true, resize images that would extend outside of the viewport so they fit neatly inside of it. This saves the user from having to scroll to see the entire image.</td>
+              </tr>
+              <tr>
+                <td>maxWidth</td>
+                <td data-label="Default:" class="default-row">&#xA0;</td>
+                <td>If set, the image height will be limited to this number, in pixels. Aspect ratio will not be maintained.</td>
+              </tr>
+              <tr>
+                <td>maxHeight</td>
+                <td data-label="Default:" class="default-row">&#xA0;</td>
+                <td>If set, the image width will be limited to this number, in pixels. Aspect ratio will not be maintained.</td>
+              </tr>
+              <tr>
+                <td>positionFromTop</td>
+                <td data-label="Default:" class="default-row">50</td>
+                <td>The distance from top of viewport that the Lightbox container will appear, in pixels.</td>
+              </tr>
+              <tr>
+                <td>resizeDuration</td>
+                <td data-label="Default:" class="default-row">700</td>
+                <td>The time it takes for the Lightbox container to animate its width and height when transition between different size images, in milliseconds.</td>
+              </tr>
+              <tr>
+                <td>showImageNumberLabel</td>
+                <td data-label="Default:" class="default-row">true</td>
+                <td>If false, the text indicating the current image number and the total number of images in set (Ex. &quot;image 2 of 4&quot;) will be hidden.</td>
+              </tr>
+              <tr>
+                <td>wrapAround</td>
+                <td data-label="Default:" class="default-row">false</td>
+                <td>If true, when a user reaches the last image in a set, the right navigation arrow will appear and they will be to continue moving forward which will take them back to the first image in the set.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <!-- BROWSER SUPPORT -->
+
+      <section id="browser-support" class="browser-support-section">
+        <div class="container">
+          <h2>Browser support</h2>
+          <p>Lightbox2 has been tested successfully in the following browsers:</p>
+          <ul>
+            <li><strong>Internet Explorer.</strong><br>The <code>lightbox-plus-jquery.js</code> file includes jQuery v2.x and supports IE 9+. If you want to support IE 6, 7, and 8, use your own copy of jQuery v1.x with <code>lightbox.js</code>.</li>
+            <li><strong>Chrome</strong></li>
+            <li><strong>Safari</strong></li>
+            <li><strong>Firefox</strong></li>
+            <li><strong>iOS Safari</strong></li>
+            <li><strong>iOS Chrome</strong></li>
+            <li><strong>Android Browser</strong></li>
+            <li><strong>Android Chrome</strong></li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- LICENSE -->
+
+      <section id="license" class="license-section">
+        <div class="container">
+          <h2>License</h2>
+          <p>Lightbox2 is licensed under <a href="https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE">The MIT License</a>.</p>
+          <ul>
+            <li><strong>100% Free.</strong> Lightbox is free to use in both commercial and non-commercial work.</li>
+            <li><strong>Attribution is required.</strong>This means you must leave my name, my homepage link, and the license info intact. None of these items have to be user-facing and can remain within the code.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="help" class="help-section">
+        <div class="container">
+          <h2>Help</h2>
+
+          <h3>Have a question about how to use Lightbox?</h3>
+          <p>Follow the steps below to get help. Make sure you have read the documentation on this page and looked at the included example first.</p>
+          <ol>
+            <li>Search <a href="http://stackoverflow.com/questions/tagged/lightbox2">Stackoverflow</a> to see if other people have run into the same issue you are having.</li>
+            <li>If your issue is unique, then <a href="http://stackoverflow.com/questions/ask">post a new question on Stackoverflow</a>. Use the <code>lightbox2</code> tag.</li>
+          </ol>
+          <p>Do not use Github Issues to report personal support requests.</p>
+
+          <h3>Found a bug?</h3>
+          <p>If you find a bug, follow the instructions in the <a href="https://github.com/lokesh/lightbox2/blob/master/CONTRIBUTING.md#found-a-bug">Contribution Guildelines</a> to report the issue.</p>
+
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <footer>
+        <div class="container">
+          <p>
+            Created by Lokesh Dhakar
+            <br>
+            <a href="https://twitter.com/lokesh" class="button">Follow me on Twitter</a>
+          </p>
+        </div>
+      </footer>
+
+    </div><!-- .content -->
+
+    <div id="sharing" class="sharing-section">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="lokesh" data-size="large">Tweet</a>
+    </div>
+
+
+    <!-- LIGHTBOX PLUS JQUERY -->
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+    <!-- SMOOTH SCROLLING -->
+
+    <script>
+      $(function() {
+        $('#nav').on('click', '.nav-item', function(event) {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+           scrollTop: $(hash).offset().top
+          }, 1000, function() {
+            window.location.hash = hash;
+          });
+        });
+      });
+
+    </script>
+
+    <!-- GOOGLE ANALYTICS -->
+
+    <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2196019-1']);
+    _gaq.push(['_trackPageview']);
+    (function()
+    {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+    <!-- TWITTER SHARE WIDGET -->
+
+    <script>
+    ! function(d, s, id)
+    {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id))
+      {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'twitter-wjs');
+    </script>
+
+  </body>
 </html>
 
 
