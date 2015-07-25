@@ -1,91 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox Example</title>
+  <link rel="stylesheet" href="/css/lightbox.css">
+</head>
+<body>
 
-    <title>Adele Rehkemper</title>
+  <section>
+    <h3>Two Individual Images</h3>
+    <div>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
+    </div>
 
-  
+    <hr />
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
-    <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <h3>A Four Image Set</h3>
+    <div>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+    </div>    
+  </section>
 
-  </head>
-  <body>
+  <section>
+    <p>
+      For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+    </p>
+  </section>
 
-   
-
-    <div class="content">
-
-
-      
-
-      <!-- EXAMPLES -->
-
-      <section id="examples" class="examples-section">
-        <div class="container">
-
-    
-          <h3 style="clear: both;">Four image set</h3>
-          <div class="image-row">
-            <div class="image-set">
-              <a class="example-image-link" href="https://cloud.githubusercontent.com/assets/13401508/8889055/f78d0f52-32c8-11e5-9efa-228028ac9bc8.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://cloud.githubusercontent.com/assets/13401508/8889055/f78d0f52-32c8-11e5-9efa-228028ac9bc8.JPG" alt="Golden Gate Bridge with San Francisco in distance"></a>
-              <a class="example-image-link" href="images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/thumb-4.jpg" alt="Forest with mountains behind"></a>
-              <a class="example-image-link" href="images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you&apos;re viewing."><img class="example-image" src="images/thumb-5.jpg" alt="Bicyclist looking out over hill at ocean"></a>
-              <a class="example-image-link" href="images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="images/thumb-6.jpg" alt="Small lighthouse at bottom with ocean behind"></a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 
 
-     
-    <!-- LIGHTBOX PLUS JQUERY -->
-
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-
-
-    <!-- SMOOTH SCROLLING -->
-
-    <script>
-      $(function() {
-        $('#nav').on('click', '.nav-item', function(event) {
-          event.preventDefault();
-          var hash = this.hash;
-
-          $('html, body').animate({
-           scrollTop: $(hash).offset().top
-          }, 1000, function() {
-            window.location.hash = hash;
-          });
-        });
-      });
-
-    </script>
-
-    <!-- GOOGLE ANALYTICS -->
-
-    <script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-2196019-1']);
-    _gaq.push(['_trackPageview']);
-    (function()
-    {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-
-
-
-
-
-  </body>
+</body>
 </html>
 
 
