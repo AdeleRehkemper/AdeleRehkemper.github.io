@@ -1,0 +1,284 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>AdeleRehkemper</title>
+<link href="crt.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link href="lightboxcss.css" rel="stylesheet" type="text/css" />
+<link href="pageone.css" rel="stylesheet" type="text/css">
+<style>
+@charset "UTF-8";
+/* CSS Document */
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+
+.Box{
+	background-color: rgba(0, 0, 0, .7);
+	width:730px;
+	/*margin-top:70px;*/
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:39px;
+	padding-bottom:28px;
+	padding-left:30px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	/*-webkit-box-shadow: 8px 27px 10px -10px rgba(0,0,0, .5);
+	box-shadow: 8px 15px 10px 2px rgba(0,0,0, .5);*/
+	
+	}
+	.Box a{
+		margin-left:8px;
+		margin-bottom:10px;
+		display:inline-block;
+		-moz-border-radius: 15px 15px 15px 15px;
+		-webkit-border-radius: 15px 15px 15px 15px;
+		-ms-border-radius: 15px 15px 15px 15px;
+		border-radius: 15px 15px 15px 15px;
+		
+	}
+	
+	.Box img{
+		-moz-border-radius: 8px 8px 8px 8px;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		-ms-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;
+	}
+	/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+}
+
+/* try putting the full Eric Myer css reset here*/
+
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+body{
+	background:url(bdub_img/bkga.png)30%, url(bdub_img/bkgc.png)-20%, url(bdub_img/astro.png)8%;
+	-webkit-transition: all 0.3s ease;
+	-mos-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	}
+	
+	header{
+	width:1198px;
+	height:197px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	/*border-bottom: thin grey solid;*/
+	background-image:url(bdub_img/crt_logob.png);
+	background-position: 0px 12px;
+	background-repeat:no-repeat;
+	-moz-border-radius: 27px 27px 0px 0px;
+		-webkit-border-radius: 27px 27px 0px 0px;
+		-ms-border-radius: 27px 27px 0px 0px;
+		border-radius: 27px 27px 0px 0px;
+	}
+		header h1{
+			color:rgba(255, 255, 255, 1);
+			margin-left:3000px;
+			height:1px;
+			}
+
+.Box{
+	background-color: rgba(0, 0, 0, .7);
+	width:430px;
+	/*margin-top:70px;*/
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:39px;
+	padding-bottom:28px;
+	padding-left:30px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	/*-webkit-box-shadow: 8px 27px 10px -10px rgba(0,0,0, .5);
+	box-shadow: 8px 15px 10px 2px rgba(0,0,0, .5);*/
+	
+	}
+	.Box a{
+		margin-left:8px;
+		margin-bottom:10px;
+		display:inline-block;
+		-moz-border-radius: 15px 15px 15px 15px;
+		-webkit-border-radius: 15px 15px 15px 15px;
+		-ms-border-radius: 15px 15px 15px 15px;
+		border-radius: 15px 15px 15px 15px;
+		
+	}
+	
+	.Box img{
+		-moz-border-radius: 8px 8px 8px 8px;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		-ms-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;
+	}
+	
+		
+</style>
+</head>
+
+<body>
+	
+<section class ="Box" id="Draw">
+
+<a href="drawings/bike.jpg" 
+rel="lightbox[Drawings]" title="Damaged          20x16          Pencil on Paper"><img src="drawings/bikesmall.jpg"/></a>
+
+<a href="drawings/greenstilllife.jpg" rel="lightbox[Drawings]" title="Green Still Life          24x18          Charcoal on Paper"><img src="drawings/greenstilllifesmall.jpg"/></a>
+    
+    <a href="drawings/city.jpg" rel="lightbox[Drawings]" title="Great City          8.5x11          Pen on Paper"><img src="drawings/citysmall.jpg"/></a>
+    
+    <a href="drawings/gravysnout.jpg" rel="lightbox[Drawings]" title="Gravy Snout          11x8.5          Pen on Paper"><img src="drawings/gravysnoutsmall.jpg"/></a>
+    
+    <a href="drawings/lonelyboy.jpg" rel="lightbox[Drawings]" title="Lonely Boy          11x8.5          Pen on Paper"><img src="drawings/lonelyboysmall.jpg"/></a>
+    
+    <a href="drawings/longman.jpg" rel="lightbox[Drawings]" title="Long Man          8.5x11          Pen on Paper"><img src="drawings/longmansmall.jpg"/></a>
+    
+    <a href="drawings/madeup.jpg" rel="lightbox[Drawings]" title="Made Up          11x8.5          Pen on Paper"><img src="drawings/madeupsmall.jpg"/></a>
+    
+    <a href="drawings/skeletina.jpg" rel="lightbox[Drawings]" title="Skeletina          8.5x11          Pen on Paper"><img src="drawings/skeletinasmall.jpg"/></a>
+    
+    <a href="drawings/throwinguprainbows.jpg" rel="lightbox[Drawings]" title="Throwing Up Rainbows          8.5x11          Pen on Paper"><img src="drawings/throwinguprainbowssmall.jpg"/></a>
+    
+    <a href="drawings/humanbehavior.JPG" rel="lightbox[Drawings]" title="Human Behavior          7.5x9.75          Pen on Paper"><img src="drawings/humanbehaviorsmall.jpg"/></a>
+    
+    <a href="drawings/teaparty.jpg" rel="lightbox[Drawings]" title="Tea Party          8.5x11          Pen on Paper"><img src="drawings/teapartysmall.jpg"/></a>
+    
+    <a href="drawings/boobietrap.jpg" rel="lightbox[Drawings]" title="Boobie Trap          8.5x11          Pen on Paper"><img src="drawings/boobietrapsmall.jpg"/></a>
+
+ <a href="drawings/mask.jpg" rel="lightbox[Drawings]" title="Mask          8.5x11          Pen on Paper"><img src="drawings/masksmall.jpg"/></a>
+ 
+  <a href="drawings/circleheads.jpg" rel="lightbox[Drawings]" title="Circle Heads          8.5x11          Pen on Paper"><img src="drawings/circleheadssmall.jpg"/></a>
+
+</section>
+
+<section class ="Box" id="Doodles">
+<a href="drawings/whiteonblack.jpg" rel="lightbox[Drawings]" title="Jazzy          24x18          Charcoal on Black Paper"><img src="drawings/whiteonblacksmall.jpg"/></a>
+
+<a href="drawings/fifthteenmindrawing.jpg" rel="lightbox[Drawings]" title="Fifthteen Minute Combo          18x24          Charcoal on Paper"><img src="drawings/fifthteenmindrawingsmall.jpg"/></a>
+
+<a href="drawings/fivemincombo.jpg" rel="lightbox[Drawings]" title="Five Minute Combo          18x24          Charcoal on Paper"><img src="drawings/fivemincombosmall.jpg"/></a>
+
+<a href="drawings/nintyseccombo.jpg" rel="lightbox[Drawings]" title="Ninty Second Combo          18x24          Charcoal on Paper"><img src="drawings/nintyseccombosmall.jpg"/></a>
+
+<a href="drawings/graham.jpg" rel="lightbox[Drawings]" title="Graham          18x24          Charcoal on Paper"><img src="drawings/grahamsmall.jpg"/></a>
+
+<a href="drawings/jordy.jpg" rel="lightbox[Drawings]" title="Jordy          18x24            Charcoal on Paper"><img src="drawings/jordysmall.jpg"/></a>
+
+</section>
+<a id="index" href="index.html">Home</a>
+<p style="text-align:center;"></p>
+
+</body>
+
+</html>
