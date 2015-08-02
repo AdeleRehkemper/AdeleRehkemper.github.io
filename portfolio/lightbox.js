@@ -36,7 +36,8 @@
 
 // If you would like to use a custom loading image or close button reference them in the next two lines.
 var loadingImage = 'loading.gif';		
-var closeButton = 'close.gif';		
+var closeButton = 'https://cloud.githubusercontent.com/assets/13401508/9027761/73f34652-3962-11e5-9dbc-11fdbd1fd915.png';		
+
 
 
 
