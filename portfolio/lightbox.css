@@ -16,13 +16,14 @@
 #overlay img{ border: none; }
 
 #overlay{ background-image: url(https://cloud.githubusercontent.com/assets/13401508/9027651/eb71a4c6-395d-11e5-94e1-f0d504741582.png); }
+
 #overlay{
-	background-color: #333;
+	background-color: #000;
 	back\ground-color: transparent;
 	background-image: url(https://cloud.githubusercontent.com/assets/13401508/9027651/eb71a4c6-395d-11e5-94e1-f0d504741582.png);
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://cloud.githubusercontent.com/assets/13401508/9027651/eb71a4c6-395d-11e5-94e1-f0d504741582.png", sizingMethod="scale");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
 	}
-	
+
 
 
 
