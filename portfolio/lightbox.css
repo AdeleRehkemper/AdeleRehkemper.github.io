@@ -1,9 +1,4 @@
-#lightbox{
-	background-color:#eee;
-	padding: 10px;
-	border-bottom: 2px solid #666;
-	border-right: 2px solid #666;
-	}
+
 #lightboxDetails{
 	font-size: 0.8em;
 	padding-top: 0.4em;
@@ -23,6 +18,7 @@
 	background-image: url(https://cloud.githubusercontent.com/assets/13401508/9027651/eb71a4c6-395d-11e5-94e1-f0d504741582.png);
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
 	}
+
 
 
 
