@@ -21,7 +21,6 @@
 body{
 	font: 76% Verdana, Helvetica, sans-serif;
 	color: #555;
-	background-color: #edede3;
 	text-align: center;		/* centers content in IE5.5 and earlier */
 	word-wrap: break-word;	/* breaks long words in IE, prevents float drops */
 	}
@@ -120,6 +119,7 @@ kbd{
 	}	
 
 .caption{ font-size: 0.9em; padding-top: 0.2em ;	}
+
 
 
 
